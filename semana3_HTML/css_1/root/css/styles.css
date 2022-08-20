@@ -1,0 +1,9 @@
+/*Estilos del header */
+
+header{
+    background-image: url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+    background-position: 30% 80%;
+    background-size:cover ; /* cover hace que complete el ancho */
+    /*background-size: contain;  contain hace que complete el alto */
+    height: 450px;
+}

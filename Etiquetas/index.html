@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer web</title>
+    
+   <!-- truquito para darle styl a una tabla--> 
+    <style>
+        table, th, td {
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+<body>
+    <!--tabla-->
+    <table style="width: 500px">
+        <thead>
+             <tr>
+                 <th>precio</th>
+                 <th>articulo</th>
+             </tr>
+        </thead>
+        <tr>
+            <td>500</td>
+            <td>goma</td>
+        </tr>
+    </table>
+
+
+<!--listas-->
+<ol>
+    <li>elemento 1</li>
+    <li>elemento 2</li>
+    <li>elemento 3</li>
+    <li>elemento 4</li>
+    <br>
+    <li value="20">elemento 1</li>
+    <li>elemento 2</li>
+    <li>elemento 3</li>
+    <li>elemento 4</li>
+        <ol>
+            <li style="list-style: lower-roman;">elemento 1</li>
+            <li style="list-style: lower-roman;"">elemento 2</li>
+            <li style="list-style: lower-roman;"">elemento 3</li>
+            <li style="list-style: lower-roman;"">elemento 4</li>
+        </ol>
+</ol>
+<br>
+
+
+
+
+
+
+<!-- La etiqueta 'form' es para agregar un formulario (rectangulo0) 
+    en donde se puede interectuar con el usuario al ingresar su nombre. Se pueden agregar la propiedades o atributos 
+    id, name (no olvidar nunca), type, placeholder, etc.. 
+'label' agrega el nombre al lado del rectangulo.
+ínput es invisible. 'placeholder' es para que en el rectangulo aparezca en gris suave lo que se debe agregar en ese form.
+El atributo 'type' por defecto es text, si valor = submit aparece un boton. tambien va password, checkbox, radio, file.. -->
+    <form action="/formulario" method="get"> <!-- action es donde se van a alojar los datos del usuario el metodo puede ser get, dialog o post-->
+        
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="Nombre" placeholder="Nombre">
+        <br>
+        <label for="nombre">Apellido</label>
+        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido">
+    
+    </form>
+    <br>
+    <label for="comentario">Comentario</label>
+    <br>
+    <!-- textearea es para ingresar comentarios-->
+    <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="ingrese comentario"></textarea>
+    <br>
+    <!--<input type="submit"/>esto se puede usar para enviar aunque tambien se utiliza <button-->
+    <button type="reset">Enviar</button>
+    
+
+    <!-- hr marca una linea horizontal-->
+    <hr>
+    <!-- br salto de linea-->
+    <br>
+
+</body>
+</html>
